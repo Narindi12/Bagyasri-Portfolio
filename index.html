@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bagya Sri Narindi | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav id="desktop-nav">
+      <div class="logo">Bagya Sri Narindi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== MOBILE NAV ===== -->
+    <nav id="hamburger-nav">
+      <div class="logo">Bagya Sri Narindi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== PROFILE / HERO ===== -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- Replace with your image -->
+        <img src="./Images/profile-pic.png" alt="Bagya Sri Narindi profile picture" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bagya Sri Narindi</h1>
+        <p class="section__text__p2">Software Engineer | Full-Stack Developer | Data Analyst</p>
+
+        <div class="btn-container">
+          <!-- Replace with your resume link (Google Drive / PDF) -->
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1sFKrEuVaQZDZeYHMpmkt-tnB4_GQ5UYe/view?usp=sharing','_blank')"
+          >
+            📄 Resume
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            ✉️ Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./Images/linkedin.png"
+            alt="LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/narindi-bagyasri/','_blank')"
+          />
+          <img
+            src="./Images/github.png"
+            alt="GitHub profile"
+            class="icon"
+            onclick="window.open('https://github.com/Narindi12','_blank')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./Images/about-pic.png" alt="About picture" class="about-pic" />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Current Focus</h3>
+              <p>
+                Backend APIs • Full-Stack Apps • Data-Driven Systems • RAG/LLM Apps
+              </p>
+            </div>
+
+            <div class="details-container">
+              <h3>Education</h3>
+              <p>
+                <strong>M.S. Computer Science</strong>, Georgia State University
+                <span>(Jan 2024 – Dec 2025)</span><br />
+                <strong>B.E. Computer Science</strong>, R.M.D Engineering College
+                <span>(Aug 2019 – Apr 2023)</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I’m <strong>Bagya Sri Narindi</strong>, a results-driven Software Engineer with experience in
+              <strong>full-stack development</strong>, <strong>backend APIs</strong>, and <strong>AI-powered systems</strong>.
+              I enjoy building scalable applications with <strong>FastAPI</strong> and <strong>React</strong>, working with
+              <strong>cloud platforms</strong>, and developing <strong>RAG-based solutions</strong> that improve real-world outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- IBM -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI Research Intern — IBM</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>RAG + LLM Systems</h3>
+                  <p>
+                    Built an AI-powered Interview Trainer Agent using IBM Granite LLMs and
+                    Retrieval-Augmented Generation (RAG).
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>FastAPI & Watsonx.ai</h3>
+                  <p>
+                    Developed scalable REST APIs using FastAPI and Watsonx.ai runtime to deliver
+                    real-time feedback with sub-second latency.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Evaluation & Prompting</h3>
+                  <p>
+                    Improved response relevance via prompt engineering and evaluation metric refinement.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <p><em>May 2025 – Aug 2025 · Remote</em></p>
+          </div>
+
+          <!-- GSU -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              Graduate Assistant (Software Engineering) — Georgia State University
+            </h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Course Support</h3>
+                  <p>
+                    Coordinated labs, graded projects, and evaluated sprint deliverables for 60+ students/semester.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Mentorship</h3>
+                  <p>
+                    Mentored students in OOP, REST API design, software testing, and full-stack web development.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Rubrics & GitHub</h3>
+                  <p>
+                    Assisted faculty with rubric design, GitHub-based evaluations, and technical troubleshooting.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <p><em>Jan 2024 – Dec 2025 · Atlanta, GA</em></p>
+          </div>
+
+          <!-- KPIT -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Intern — KPIT Technologies</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Microservices & APIs</h3>
+                  <p>
+                    Built and integrated RESTful APIs and microservices, reducing feature delivery timelines by 20%.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Debugging & Reliability</h3>
+                  <p>
+                    Optimized backend logic and debugging workflows, reducing recurring defects by 15%.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CI/CD Automation</h3>
+                  <p>
+                    Automated builds and deployments using Git and Jenkins CI/CD, supporting weekly releases.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <p><em>May 2023 – Nov 2023 · Bangalore, India</em></p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#skills'"
+      />
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+      <p class="section__text__p1">What I Work With</p>
+      <h1 class="title">Skills</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- Tabs (uses your script.js openSkill) -->
+            <div class="skills-tabs">
+              <button class="skill-tab active" onclick="openSkill('tab-langs', this)">Languages</button>
+              <button class="skill-tab" onclick="openSkill('tab-frameworks', this)">Frameworks</button>
+              <button class="skill-tab" onclick="openSkill('tab-cloud', this)">Cloud & DevOps</button>
+              <button class="skill-tab" onclick="openSkill('tab-db', this)">Databases</button>
+              <button class="skill-tab" onclick="openSkill('tab-tools', this)">Tools</button>
+            </div>
+
+            <div class="skills-panes">
+              <div id="tab-langs" class="skill-pane active">
+                <h2 class="experience-sub-title">Programming Languages</h2>
+                <div class="skill-badges">
+                  <span class="skill-badge">Python</span>
+                  <span class="skill-badge">Java</span>
+                  <span class="skill-badge">JavaScript</span>
+                  <span class="skill-badge">SQL</span>
+                  <span class="skill-badge">C</span>
+                  <span class="skill-badge">HTML</span>
+                  <span class="skill-badge">CSS</span>
+                </div>
+              </div>
+
+              <div id="tab-frameworks" class="skill-pane">
+                <h2 class="experience-sub-title">Frameworks & Libraries</h2>
+                <div class="skill-badges">
+                  <span class="skill-badge">React</span>
+                  <span class="skill-badge">FastAPI</span>
+                  <span class="skill-badge">Node.js</span>
+                  <span class="skill-badge">Spring Boot</span>
+                  <span class="skill-badge">Bootstrap</span>
+                  <span class="skill-badge">.NET</span>
+                </div>
+              </div>
+
+              <div id="tab-cloud" class="skill-pane">
+                <h2 class="experience-sub-title">Cloud & DevOps</h2>
+                <div class="skill-badges">
+                  <span class="skill-badge">AWS</span>
+                  <span class="skill-badge">IBM Cloud</span>
+                  <span class="skill-badge">Docker</span>
+                  <span class="skill-badge">Jenkins</span>
+                  <span class="skill-badge">CI/CD</span>
+                  <span class="skill-badge">Git</span>
+                  <span class="skill-badge">GitHub</span>
+                </div>
+              </div>
+
+              <div id="tab-db" class="skill-pane">
+                <h2 class="experience-sub-title">Databases</h2>
+                <div class="skill-badges">
+                  <span class="skill-badge">PostgreSQL</span>
+                  <span class="skill-badge">MySQL</span>
+                  <span class="skill-badge">SQLite</span>
+                  <span class="skill-badge">MongoDB</span>
+                </div>
+              </div>
+
+              <div id="tab-tools" class="skill-pane">
+                <h2 class="experience-sub-title">Tools</h2>
+                <div class="skill-badges">
+                  <span class="skill-badge">VS Code</span>
+                  <span class="skill-badge">Tableau</span>
+                  <span class="skill-badge">Power BI</span>
+                  <span class="skill-badge">REST APIs</span>
+                  <span class="skill-badge">Watsonx.ai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /details-container -->
+        </div>
+      </div>
+
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Rate My Professor -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Rate My Professor Platform</h2>
+            <div class="btn-container">
+              <details>
+                <summary class="btn btn-color-2 project-btn">Overview</summary>
+                <p>
+                  Full-stack platform enabling students to rate and review professors with dynamic filters and analytics.
+                  Includes JWT auth restricted to verified university domains and an admin console for moderation.
+                </p>
+              </details>
+              <details>
+                <summary class="btn btn-color-2 project-btn">Tech Stack</summary>
+                <p>FastAPI, React, JWT, SQLite/PostgreSQL, REST APIs</p>
+              </details>
+
+              <!-- Replace hrefs -->
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Narindi12/Ratemyprofessor','_blank')">
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <!-- Interview Trainer Agent -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Interview Trainer Agent (RAG)</h2>
+            <div class="btn-container">
+              <details>
+                <summary class="btn btn-color-2 project-btn">Overview</summary>
+                <p>
+                  AI-powered interview coaching system that generates personalized Q&A sessions and feedback using RAG
+                  pipelines and iterative prompt refinement.
+                </p>
+              </details>
+              <details>
+                <summary class="btn btn-color-2 project-btn">Tech Stack</summary>
+                <p>IBM Granite LLMs, Watsonx.ai, FastAPI, MongoDB, RAG</p>
+              </details>
+
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Narindi12/Interview_Trainer_Agent','_blank')">
+                GitHub
+              </button>
+            
+            </div>
+          </div>
+
+          <!-- Healthcare Analysis -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Healthcare (Heart Disease) Analysis</h2>
+            <div class="btn-container">
+              <details>
+                <summary class="btn btn-color-2 project-btn">Overview</summary>
+                <p>
+                  Cleaned and analyzed a heart disease dataset (1,000+ records) to identify key risk factors and
+                  communicated insights using dashboards and statistical plots.
+                </p>
+              </details>
+              <details>
+                <summary class="btn btn-color-2 project-btn">Tech Stack</summary>
+                <p>Python, Pandas, NumPy, Matplotlib/Seaborn, EDA</p>
+              </details>
+
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Narindi12/healthcare-heart-disease-analysis','_blank')">
+                GitHub
+              </button>
+              
+            </div>
+          </div>
+
+          <!-- Colleges Dashboard -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">U.S. Colleges Data Dashboard</h2>
+            <div class="btn-container">
+              <details>
+                <summary class="btn btn-color-2 project-btn">Overview</summary>
+                <p>
+                  Interactive dashboard analyzing tuition, enrollment, admissions, graduation rates, and geography
+                  to support data-driven college selection.
+                </p>
+              </details>
+              <details>
+                <summary class="btn btn-color-2 project-btn">Tech Stack</summary>
+                <p>Python, Pandas, Plotly, EDA, Visualization</p>
+              </details>
+
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Narindi12/colleges-data-dashboard','_blank')">
+                GitHub
+              </button>
+              
+            </div>
+          </div>
+
+          <!-- Fashion-Tech Web Solution -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Fashion-Tech Web Solution</h2>
+            <div class="btn-container">
+              <details>
+                <summary class="btn btn-color-2 project-btn">Overview</summary>
+                <p>
+                  Responsive fashion portfolio platform showcasing men’s collections with optimized UX and cloud hosting.
+                </p>
+              </details>
+              <details>
+                <summary class="btn btn-color-2 project-btn">Tech Stack</summary>
+                <p>React, AWS EC2, AWS S3</p>
+              </details>
+
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Narindi12/Fashion-Tech-web-solution','_blank')">
+                GitHub
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./Images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:bagyasrinarindi@gmail.com">bagyasrinarindi@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./Images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p>
+            <a href="https://www.linkedin.com/in/narindi-bagyasri/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./Images/github.png" alt="GitHub icon" class="icon contact-icon" />
+          <p>
+            <a href="https://github.com/Narindi12" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Bagya Sri Narindi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
